@@ -5,11 +5,11 @@ function upDate(previewPic){
        1) change the url for the background image of the div with the id = "image" 
        to the source file of the preview image
        */
-       var imgUrl = previewPic.src;
-       document.getElementById("image").style.backgroundImage = "url('" + imgUrl +"')";
+       //var imgUrl = previewPic.src;
+       document.getElementById("image").style.backgroundImage = "url('" + previewPic.src +"')";
       
-       var text = previewPic.alt
-      document.getElementById("image").innerHTML = text;
+      // var text = previewPic.alt
+      document.getElementById("image").innerHTML = previewPic.alt;
       
        
       /* 2) Change the text  of the div with the id = "image" 
